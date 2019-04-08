@@ -1,0 +1,6 @@
+module Waaatcher {
+  umbrella header "Waaatcher-umbrella.h"
+
+  export *
+  module * { export * }
+}

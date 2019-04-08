@@ -1,0 +1,27 @@
+{
+  "name": "Waaatcher",
+  "version": "0.0.1",
+  "authors": [
+    "Chen",
+    {
+      "Chen": ""
+    }
+  ],
+  "homepage": "https://github.com/hechen/Waaatcher.git",
+  "summary": "File Watcher Wrapper for macOS",
+  "description": "File Watcher Wrapper for macOS",
+  "platforms": {
+    "osx": null
+  },
+  "source": {
+    "git": "https://github.com/hechen/Waaatcher.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "Source/**/**",
+  "swift_version": "4.2",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE",
+    "text": "Permission is hereby granted ..."
+  }
+}

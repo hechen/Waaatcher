@@ -1,0 +1,16 @@
+PODS:
+  - Waaatcher (0.0.1)
+
+DEPENDENCIES:
+  - Waaatcher (from `../`)
+
+EXTERNAL SOURCES:
+  Waaatcher:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Waaatcher: d093321bf7da34b1f34cf1a2a6c7a4c9e1fbdfaa
+
+PODFILE CHECKSUM: 586227a425165bf8dd69be75c25c8ffa6f903868
+
+COCOAPODS: 1.6.0

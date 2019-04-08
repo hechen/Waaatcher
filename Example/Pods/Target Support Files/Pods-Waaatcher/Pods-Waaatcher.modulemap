@@ -1,0 +1,6 @@
+module Pods_Waaatcher {
+  umbrella header "Pods-Waaatcher-umbrella.h"
+
+  export *
+  module * { export * }
+}
