@@ -13,13 +13,26 @@ File Watcher Wrapper for macOS
 
 ### How to use
 
+#### Start
+
 ``` Swift
-watcher = Waaatcher(paths: [path])
+let watcher = Waaatcher(paths: [path])
+
+// ...
 watcher.watcherEventCallback = { events in
     print("Events: \(events)")
 }
+
 watcher.start()
 ```
+
+#### Stop
+
+``` Swift
+watcher.stop()
+// or watcher = nil
+```
+
 
 Each event is a structure which contains three parts as below
 
@@ -37,5 +50,5 @@ Also, `FSEventFlags` is defined for wrap default unreadable `FSEventStreamEventF
 
 ### References
 
-[Using the FSEventsFramework](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/FSEvents_ProgGuide/UsingtheFSEventsFramework/UsingtheFSEventsFramework.html)
-[Apple FSEvents](http://nicoleibrahim.com/apple-fsevents-forensics/)
+1. [Using the FSEventsFramework](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/FSEvents_ProgGuide/UsingtheFSEventsFramework/UsingtheFSEventsFramework.html)
+2. [Apple FSEvents](http://nicoleibrahim.com/apple-fsevents-forensics/)
