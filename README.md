@@ -1,4 +1,7 @@
 # Waaatcher
+
+[![Build Status](https://travis-ci.com/hechen/Waaatcher.svg?branch=master)](https://travis-ci.com/hechen/Waaatcher)
+
 File Watcher Wrapper for macOS
 
 
