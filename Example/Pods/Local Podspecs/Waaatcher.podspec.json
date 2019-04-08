@@ -11,7 +11,7 @@
   "summary": "File Watcher Wrapper for macOS",
   "description": "File Watcher Wrapper for macOS",
   "platforms": {
-    "osx": null
+    "osx": "10.10"
   },
   "source": {
     "git": "https://github.com/hechen/Waaatcher.git",

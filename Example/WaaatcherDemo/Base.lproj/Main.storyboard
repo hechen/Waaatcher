@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -10,11 +12,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Waaatcher" id="1Xt-HY-uBw">
+                            <menuItem title="WaaatcherDemo" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Waaatcher" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="WaaatcherDemo" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About Waaatcher" id="5kV-Vb-QxS">
+                                        <menuItem title="About WaaatcherDemo" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -28,7 +30,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide Waaatcher" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide WaaatcherDemo" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -46,7 +48,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit Waaatcher" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit WaaatcherDemo" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -659,7 +661,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Waaatcher Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="WaaatcherDemo Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -673,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WaaatcherDemo" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -703,11 +705,73 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="WaaatcherDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="mk4-G6-gyB">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="evi-Mw-dYy">
+                                <rect key="frame" x="20" y="246" width="334" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="nq3-BW-D12">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="loz-LT-G9o">
+                                <rect key="frame" x="357" y="239" width="80" height="32"/>
+                                <buttonCell key="cell" type="push" title="Reveal" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="W6K-lo-ccl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="revealObsevePaths:" target="XfG-lQ-9wD" id="5fn-cb-Efm"/>
+                                </connections>
+                            </button>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdk-FK-qmX">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="202"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="tsn-Oq-D66">
+                                    <rect key="frame" x="0.0" y="0.0" width="450" height="202"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="J3C-4Y-ggz">
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="202"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="450" height="202"/>
+                                            <size key="maxSize" width="480" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="xuw-YL-3M8">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="6OQ-El-Tvt">
+                                    <rect key="frame" x="434" y="0.0" width="16" height="202"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Wdk-FK-qmX" firstAttribute="top" secondItem="evi-Mw-dYy" secondAttribute="bottom" constant="44" id="0ye-yt-XxU"/>
+                            <constraint firstAttribute="trailing" secondItem="loz-LT-G9o" secondAttribute="trailing" constant="19" id="7YL-sW-mdj"/>
+                            <constraint firstItem="loz-LT-G9o" firstAttribute="leading" secondItem="evi-Mw-dYy" secondAttribute="trailing" constant="9" id="Aif-wb-Wdr"/>
+                            <constraint firstItem="evi-Mw-dYy" firstAttribute="centerY" secondItem="loz-LT-G9o" secondAttribute="centerY" id="KCt-hh-ZNO"/>
+                            <constraint firstItem="loz-LT-G9o" firstAttribute="top" secondItem="mk4-G6-gyB" secondAttribute="top" constant="33" id="YwY-Ie-3BS"/>
+                            <constraint firstItem="evi-Mw-dYy" firstAttribute="leading" secondItem="mk4-G6-gyB" secondAttribute="leading" constant="20" id="jKP-6B-dkK"/>
+                            <constraint firstAttribute="trailing" secondItem="Wdk-FK-qmX" secondAttribute="trailing" id="jPo-cE-SW3"/>
+                            <constraint firstAttribute="bottom" secondItem="Wdk-FK-qmX" secondAttribute="bottom" id="lo8-zW-4ag"/>
+                            <constraint firstItem="Wdk-FK-qmX" firstAttribute="leading" secondItem="mk4-G6-gyB" secondAttribute="leading" id="mL0-fV-TbS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="eventsLogTextView" destination="J3C-4Y-ggz" id="5TX-YW-AjS"/>
+                        <outlet property="pathTextField" destination="evi-Mw-dYy" id="hCr-Kn-tjQ"/>
+                        <outlet property="revealButton" destination="loz-LT-G9o" id="D0P-Ms-cib"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

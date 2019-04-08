@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Waaatcher
+//  WaaatcherDemo
 //
 //  Created by chen he on 2019/4/8.
 //  Copyright © 2019 chen he. All rights reserved.

@@ -7,123 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1577125D0689EBC93F99E470 /* libPods-Waaatcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0ADFDBC91F331DFA1BB508 /* libPods-Waaatcher.a */; };
-		74138253225B3B900075BB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74138252225B3B900075BB35 /* AppDelegate.swift */; };
-		74138255225B3B900075BB35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74138254225B3B900075BB35 /* ViewController.swift */; };
-		74138257225B3B930075BB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74138256225B3B930075BB35 /* Assets.xcassets */; };
-		7413825A225B3B930075BB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74138258225B3B930075BB35 /* Main.storyboard */; };
+		480AA19954617B6F6155FB6E /* libPods-WaaatcherDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D223E88EB85FB51223FA577A /* libPods-WaaatcherDemo.a */; };
+		7441C0A1225B7F2200366DBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441C0A0225B7F2200366DBA /* AppDelegate.swift */; };
+		7441C0A3225B7F2200366DBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441C0A2225B7F2200366DBA /* ViewController.swift */; };
+		7441C0A5225B7F2300366DBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7441C0A4225B7F2300366DBA /* Assets.xcassets */; };
+		7441C0A8225B7F2300366DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7441C0A6225B7F2300366DBA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		106F6DC9EDAD2262EC422688 /* Pods-Waaatcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waaatcher.release.xcconfig"; path = "Target Support Files/Pods-Waaatcher/Pods-Waaatcher.release.xcconfig"; sourceTree = "<group>"; };
-		6F0ADFDBC91F331DFA1BB508 /* libPods-Waaatcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Waaatcher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7413824F225B3B900075BB35 /* Waaatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waaatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		74138252225B3B900075BB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74138254225B3B900075BB35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		74138256225B3B930075BB35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74138259225B3B930075BB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7413825B225B3B930075BB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7413825C225B3B930075BB35 /* Waaatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Waaatcher.entitlements; sourceTree = "<group>"; };
-		E1B81ABAE241B90138D0910A /* Pods-Waaatcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waaatcher.debug.xcconfig"; path = "Target Support Files/Pods-Waaatcher/Pods-Waaatcher.debug.xcconfig"; sourceTree = "<group>"; };
+		7441C09D225B7F2200366DBA /* WaaatcherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaaatcherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7441C0A0225B7F2200366DBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7441C0A2225B7F2200366DBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7441C0A4225B7F2300366DBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7441C0A7225B7F2300366DBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7441C0A9225B7F2300366DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7441C0AA225B7F2300366DBA /* WaaatcherDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaaatcherDemo.entitlements; sourceTree = "<group>"; };
+		B758D88A90012C66AD5B35DC /* Pods-WaaatcherDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaaatcherDemo.release.xcconfig"; path = "Target Support Files/Pods-WaaatcherDemo/Pods-WaaatcherDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D223E88EB85FB51223FA577A /* libPods-WaaatcherDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaaatcherDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE43A29BB5C9FF009D410FBF /* Pods-WaaatcherDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaaatcherDemo.debug.xcconfig"; path = "Target Support Files/Pods-WaaatcherDemo/Pods-WaaatcherDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7413824C225B3B900075BB35 /* Frameworks */ = {
+		7441C09A225B7F2200366DBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1577125D0689EBC93F99E470 /* libPods-Waaatcher.a in Frameworks */,
+				480AA19954617B6F6155FB6E /* libPods-WaaatcherDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5956AD7DB7F3D12F56FDD7C8 /* Frameworks */ = {
+		48CF123161E96D26EE6E6262 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6F0ADFDBC91F331DFA1BB508 /* libPods-Waaatcher.a */,
+				EE43A29BB5C9FF009D410FBF /* Pods-WaaatcherDemo.debug.xcconfig */,
+				B758D88A90012C66AD5B35DC /* Pods-WaaatcherDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4C0E93710E5CF62A9D353470 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D223E88EB85FB51223FA577A /* libPods-WaaatcherDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		74138246225B3B900075BB35 = {
+		7441C094225B7F2200366DBA = {
 			isa = PBXGroup;
 			children = (
-				74138251225B3B900075BB35 /* Waaatcher */,
-				74138250225B3B900075BB35 /* Products */,
-				DE1289C15E18927A569DC162 /* Pods */,
-				5956AD7DB7F3D12F56FDD7C8 /* Frameworks */,
+				7441C09F225B7F2200366DBA /* WaaatcherDemo */,
+				7441C09E225B7F2200366DBA /* Products */,
+				48CF123161E96D26EE6E6262 /* Pods */,
+				4C0E93710E5CF62A9D353470 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		74138250225B3B900075BB35 /* Products */ = {
+		7441C09E225B7F2200366DBA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7413824F225B3B900075BB35 /* Waaatcher.app */,
+				7441C09D225B7F2200366DBA /* WaaatcherDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		74138251225B3B900075BB35 /* Waaatcher */ = {
+		7441C09F225B7F2200366DBA /* WaaatcherDemo */ = {
 			isa = PBXGroup;
 			children = (
-				74138252225B3B900075BB35 /* AppDelegate.swift */,
-				74138254225B3B900075BB35 /* ViewController.swift */,
-				74138256225B3B930075BB35 /* Assets.xcassets */,
-				74138258225B3B930075BB35 /* Main.storyboard */,
-				7413825B225B3B930075BB35 /* Info.plist */,
-				7413825C225B3B930075BB35 /* Waaatcher.entitlements */,
+				7441C0A0225B7F2200366DBA /* AppDelegate.swift */,
+				7441C0A2225B7F2200366DBA /* ViewController.swift */,
+				7441C0A4225B7F2300366DBA /* Assets.xcassets */,
+				7441C0A6225B7F2300366DBA /* Main.storyboard */,
+				7441C0A9225B7F2300366DBA /* Info.plist */,
+				7441C0AA225B7F2300366DBA /* WaaatcherDemo.entitlements */,
 			);
-			path = Waaatcher;
-			sourceTree = "<group>";
-		};
-		DE1289C15E18927A569DC162 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E1B81ABAE241B90138D0910A /* Pods-Waaatcher.debug.xcconfig */,
-				106F6DC9EDAD2262EC422688 /* Pods-Waaatcher.release.xcconfig */,
-			);
-			path = Pods;
+			path = WaaatcherDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7413824E225B3B900075BB35 /* Waaatcher */ = {
+		7441C09C225B7F2200366DBA /* WaaatcherDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7413825F225B3B930075BB35 /* Build configuration list for PBXNativeTarget "Waaatcher" */;
+			buildConfigurationList = 7441C0AD225B7F2300366DBA /* Build configuration list for PBXNativeTarget "WaaatcherDemo" */;
 			buildPhases = (
-				AE8E5194603086B8B88A77B9 /* [CP] Check Pods Manifest.lock */,
-				7413824B225B3B900075BB35 /* Sources */,
-				7413824C225B3B900075BB35 /* Frameworks */,
-				7413824D225B3B900075BB35 /* Resources */,
+				C64130AC65A6306EA7E0195E /* [CP] Check Pods Manifest.lock */,
+				7441C099225B7F2200366DBA /* Sources */,
+				7441C09A225B7F2200366DBA /* Frameworks */,
+				7441C09B225B7F2200366DBA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Waaatcher;
-			productName = Waaatcher;
-			productReference = 7413824F225B3B900075BB35 /* Waaatcher.app */;
+			name = WaaatcherDemo;
+			productName = WaaatcherDemo;
+			productReference = 7441C09D225B7F2200366DBA /* WaaatcherDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		74138247225B3B900075BB35 /* Project object */ = {
+		7441C095225B7F2200366DBA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "chen he";
 				TargetAttributes = {
-					7413824E225B3B900075BB35 = {
+					7441C09C225B7F2200366DBA = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
 			};
-			buildConfigurationList = 7413824A225B3B900075BB35 /* Build configuration list for PBXProject "Waaatcher" */;
+			buildConfigurationList = 7441C098225B7F2200366DBA /* Build configuration list for PBXProject "WaaatcherDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,30 +131,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 74138246225B3B900075BB35;
-			productRefGroup = 74138250225B3B900075BB35 /* Products */;
+			mainGroup = 7441C094225B7F2200366DBA;
+			productRefGroup = 7441C09E225B7F2200366DBA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7413824E225B3B900075BB35 /* Waaatcher */,
+				7441C09C225B7F2200366DBA /* WaaatcherDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7413824D225B3B900075BB35 /* Resources */ = {
+		7441C09B225B7F2200366DBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74138257225B3B930075BB35 /* Assets.xcassets in Resources */,
-				7413825A225B3B930075BB35 /* Main.storyboard in Resources */,
+				7441C0A5225B7F2300366DBA /* Assets.xcassets in Resources */,
+				7441C0A8225B7F2300366DBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AE8E5194603086B8B88A77B9 /* [CP] Check Pods Manifest.lock */ = {
+		C64130AC65A6306EA7E0195E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -169,7 +169,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Waaatcher-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-WaaatcherDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -179,22 +179,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7413824B225B3B900075BB35 /* Sources */ = {
+		7441C099225B7F2200366DBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74138255225B3B900075BB35 /* ViewController.swift in Sources */,
-				74138253225B3B900075BB35 /* AppDelegate.swift in Sources */,
+				7441C0A3225B7F2200366DBA /* ViewController.swift in Sources */,
+				7441C0A1225B7F2200366DBA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		74138258225B3B930075BB35 /* Main.storyboard */ = {
+		7441C0A6225B7F2300366DBA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				74138259225B3B930075BB35 /* Base */,
+				7441C0A7225B7F2300366DBA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7413825D225B3B930075BB35 /* Debug */ = {
+		7441C0AB225B7F2300366DBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -263,7 +263,7 @@
 			};
 			name = Debug;
 		};
-		7413825E225B3B930075BB35 /* Release */ = {
+		7441C0AC225B7F2300366DBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -308,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -317,68 +317,70 @@
 			};
 			name = Release;
 		};
-		74138260225B3B930075BB35 /* Debug */ = {
+		7441C0AE225B7F2300366DBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1B81ABAE241B90138D0910A /* Pods-Waaatcher.debug.xcconfig */;
+			baseConfigurationReference = EE43A29BB5C9FF009D410FBF /* Pods-WaaatcherDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Waaatcher/Waaatcher.entitlements;
+				CODE_SIGN_ENTITLEMENTS = WaaatcherDemo/WaaatcherDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
-				INFOPLIST_FILE = Waaatcher/Info.plist;
+				INFOPLIST_FILE = WaaatcherDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.Waaatcher;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.WaaatcherDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		74138261225B3B930075BB35 /* Release */ = {
+		7441C0AF225B7F2300366DBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 106F6DC9EDAD2262EC422688 /* Pods-Waaatcher.release.xcconfig */;
+			baseConfigurationReference = B758D88A90012C66AD5B35DC /* Pods-WaaatcherDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Waaatcher/Waaatcher.entitlements;
+				CODE_SIGN_ENTITLEMENTS = WaaatcherDemo/WaaatcherDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
-				INFOPLIST_FILE = Waaatcher/Info.plist;
+				INFOPLIST_FILE = WaaatcherDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.Waaatcher;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.osx.WaaatcherDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7413824A225B3B900075BB35 /* Build configuration list for PBXProject "Waaatcher" */ = {
+		7441C098225B7F2200366DBA /* Build configuration list for PBXProject "WaaatcherDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7413825D225B3B930075BB35 /* Debug */,
-				7413825E225B3B930075BB35 /* Release */,
+				7441C0AB225B7F2300366DBA /* Debug */,
+				7441C0AC225B7F2300366DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7413825F225B3B930075BB35 /* Build configuration list for PBXNativeTarget "Waaatcher" */ = {
+		7441C0AD225B7F2300366DBA /* Build configuration list for PBXNativeTarget "WaaatcherDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74138260225B3B930075BB35 /* Debug */,
-				74138261225B3B930075BB35 /* Release */,
+				7441C0AE225B7F2300366DBA /* Debug */,
+				7441C0AF225B7F2300366DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 74138247225B3B900075BB35 /* Project object */;
+	rootObject = 7441C095225B7F2200366DBA /* Project object */;
 }

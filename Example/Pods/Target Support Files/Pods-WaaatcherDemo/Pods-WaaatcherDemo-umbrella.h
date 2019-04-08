@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_WaaatcherVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_WaaatcherVersionString[];
+FOUNDATION_EXPORT double Pods_WaaatcherDemoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_WaaatcherDemoVersionString[];
 

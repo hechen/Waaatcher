@@ -7,54 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F17A451A19F108798A3EC60A927DBC3 /* Waaatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B283A23CAD2960CAFC41B315B67AEE /* Waaatcher.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3F8616BB91A019F0F524501E4F764F23 /* Pods-Waaatcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9537FEE4D32C3318A5A4A1DDE64B116D /* Pods-Waaatcher-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		91949FF07A81908A8703EFFD249DB605 /* Waaatcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF764C1F24CDFC19C997A2F5ECEA487C /* Waaatcher-dummy.m */; };
-		ADA7C1839148E2B90C40B3FD8FE88510 /* Pods-Waaatcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D62FCD10A8EC144A84D0E1A7882BE25 /* Pods-Waaatcher-dummy.m */; };
-		D8AEE6540101555C5DCE6951228A34F3 /* Waaatcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C7B82B115C908B492EAD9E0649951C0 /* Waaatcher-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2B5BBBC52FA189A3035052234CBCEC59 /* FSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEED76B38289647FBAA1ED73CECF4AD /* FSEvent.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3BBC9202434957FC43291350CD02208E /* Waaatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FD2D611333AA0B0DC0C47B202FD272 /* Waaatcher.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3E9FBCC24E70719B3AB625A20A253A1F /* Waaatcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6096E4E3AABA19862B11EB38883232F /* Waaatcher-dummy.m */; };
+		60B0D10C0B32F6852CF11156294C96F3 /* Pods-WaaatcherDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5992E6EE69C0514AED6AA0FC5A8F4D27 /* Pods-WaaatcherDemo-dummy.m */; };
+		9E37135CBCD78192F652C36C21E9B3E2 /* Waaatcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A573C4E11CBAD052C31645971B36A8 /* Waaatcher-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9A64B7957C2AB6E9618D59157B6B8DE /* Pods-WaaatcherDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD9761E019DA719A3A5E7D256E2BF7E /* Pods-WaaatcherDemo-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4516FAB2E1F7CAD19A422887B508529 /* FSEventFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051067C144605C823987590DEA317BA2 /* FSEventFlags.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D4D9413A8B55F1944FDD4CF0829AACD2 /* PBXContainerItemProxy */ = {
+		6E9E0CE9CF155F181BDABA90E09A459C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 748748BC841A777E6B786563E74173A0;
+			remoteGlobalIDString = 20889E896EC376B9537698DFF31E4220;
 			remoteInfo = Waaatcher;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C7B82B115C908B492EAD9E0649951C0 /* Waaatcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Waaatcher-umbrella.h"; sourceTree = "<group>"; };
-		0DD40F97DE4A70F41F895D99812259BD /* Waaatcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Waaatcher.xcconfig; sourceTree = "<group>"; };
-		1354331029890144AB4C5EC4B45D17D3 /* Pods-Waaatcher-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Waaatcher-acknowledgements.plist"; sourceTree = "<group>"; };
-		1CC7BDD7BB757458BE3470055BBE6BC7 /* libPods-Waaatcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Waaatcher.a"; path = "libPods-Waaatcher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D62FCD10A8EC144A84D0E1A7882BE25 /* Pods-Waaatcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Waaatcher-dummy.m"; sourceTree = "<group>"; };
-		2CA489E547FEF8311FA0B4AEA558660E /* Pods-Waaatcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Waaatcher.debug.xcconfig"; sourceTree = "<group>"; };
-		2E605ACEFDB8374603AD7D3587E0BE63 /* Waaatcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Waaatcher-prefix.pch"; sourceTree = "<group>"; };
-		61859CA736328B784D50DA36F7F85720 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		87B283A23CAD2960CAFC41B315B67AEE /* Waaatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Waaatcher.swift; path = Source/Waaatcher.swift; sourceTree = "<group>"; };
-		8AEDB42968352137D36E1C140A2F75CE /* Pods-Waaatcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Waaatcher.modulemap"; sourceTree = "<group>"; };
-		9537FEE4D32C3318A5A4A1DDE64B116D /* Pods-Waaatcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Waaatcher-umbrella.h"; sourceTree = "<group>"; };
+		00FD2D611333AA0B0DC0C47B202FD272 /* Waaatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Waaatcher.swift; path = Source/Waaatcher.swift; sourceTree = "<group>"; };
+		02153B7B406A35F7013EE0AAE856B449 /* Waaatcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Waaatcher-prefix.pch"; sourceTree = "<group>"; };
+		051067C144605C823987590DEA317BA2 /* FSEventFlags.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSEventFlags.swift; path = Source/FSEventFlags.swift; sourceTree = "<group>"; };
+		14E49DE522C24F30286F69DD16811BE8 /* libPods-WaaatcherDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WaaatcherDemo.a"; path = "libPods-WaaatcherDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		333BD3ECD35A77E36DDC3CA68575D929 /* Waaatcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Waaatcher.xcconfig; sourceTree = "<group>"; };
+		5992E6EE69C0514AED6AA0FC5A8F4D27 /* Pods-WaaatcherDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaaatcherDemo-dummy.m"; sourceTree = "<group>"; };
+		5BA0236DC7A2BA391BB4062460DDD3F0 /* Pods-WaaatcherDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WaaatcherDemo.modulemap"; sourceTree = "<group>"; };
+		6BEF87EFB8CD49EACBD351F8872A0205 /* Waaatcher.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Waaatcher.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		85A426CD23B6EE3C34C7EB41E2900572 /* Pods-WaaatcherDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaaatcherDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		98A485CB600602290AB8E7AFC5C3607C /* libWaaatcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWaaatcher.a; path = libWaaatcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD073A8C70606C503E0E12C84409D30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		CCF4F5FB930C0573F0B620B5A977FBDE /* libWaaatcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWaaatcher.a; path = libWaaatcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF7A1D55E05BFBA317E59FB38C497B5C /* Waaatcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Waaatcher.modulemap; sourceTree = "<group>"; };
-		D093AFE09BCD826B652FC2FDDC4D9795 /* Waaatcher.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Waaatcher.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D5E0721EFDA7A79B20FAB117DA750CF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		D6F58E7DCAC630E99D9A626E34270743 /* Pods-Waaatcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Waaatcher.release.xcconfig"; sourceTree = "<group>"; };
-		EF764C1F24CDFC19C997A2F5ECEA487C /* Waaatcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Waaatcher-dummy.m"; sourceTree = "<group>"; };
-		FDC714C9497C04D483C1706B1F74E4A2 /* Pods-Waaatcher-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Waaatcher-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9DEED76B38289647FBAA1ED73CECF4AD /* FSEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSEvent.swift; path = Source/FSEvent.swift; sourceTree = "<group>"; };
+		A293F7F98442E7645C0E0D582C7A4DD0 /* Pods-WaaatcherDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaaatcherDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		A8A573C4E11CBAD052C31645971B36A8 /* Waaatcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Waaatcher-umbrella.h"; sourceTree = "<group>"; };
+		AE5B713E73E24F355E9A0C40B1A42656 /* Waaatcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Waaatcher.modulemap; sourceTree = "<group>"; };
+		B20BB6BDDA3794072FF1142BC369A485 /* Pods-WaaatcherDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaaatcherDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B35E07F3BFE98E51E23216E15CB72C86 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DBD9761E019DA719A3A5E7D256E2BF7E /* Pods-WaaatcherDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WaaatcherDemo-umbrella.h"; sourceTree = "<group>"; };
+		E85FA9BDA9D98F5A120FFB56C6A24B94 /* Pods-WaaatcherDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaaatcherDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F6096E4E3AABA19862B11EB38883232F /* Waaatcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Waaatcher-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		43E6E554F3F3B6BB1BBB91949613444F /* Frameworks */ = {
+		8AF3C8E50D3F83762520CC14298AD0F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6ED348B57A968FD832A900B98C01CA6B /* Frameworks */ = {
+		B794DD78315EE3561D3B644381C8C039 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,53 +68,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3576217074ED1F16D6BC84F779B8074B /* Pod */ = {
+		5DB083BD1898828E8453AF38F180F791 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D5E0721EFDA7A79B20FAB117DA750CF6 /* LICENSE */,
-				61859CA736328B784D50DA36F7F85720 /* README.md */,
-				D093AFE09BCD826B652FC2FDDC4D9795 /* Waaatcher.podspec */,
+				E192212DF56FD41FDA28B65785CF526F /* Waaatcher */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		AD34BE4C1A1C7D6AE8906B453F16580F /* Waaatcher */ = {
+		8D7F58A77BF895CCC15A28CB4B206141 /* Pods-WaaatcherDemo */ = {
 			isa = PBXGroup;
 			children = (
-				87B283A23CAD2960CAFC41B315B67AEE /* Waaatcher.swift */,
-				3576217074ED1F16D6BC84F779B8074B /* Pod */,
-				E7DBA4EB100D0166C091A8AE52784973 /* Support Files */,
+				5BA0236DC7A2BA391BB4062460DDD3F0 /* Pods-WaaatcherDemo.modulemap */,
+				B20BB6BDDA3794072FF1142BC369A485 /* Pods-WaaatcherDemo-acknowledgements.markdown */,
+				A293F7F98442E7645C0E0D582C7A4DD0 /* Pods-WaaatcherDemo-acknowledgements.plist */,
+				5992E6EE69C0514AED6AA0FC5A8F4D27 /* Pods-WaaatcherDemo-dummy.m */,
+				DBD9761E019DA719A3A5E7D256E2BF7E /* Pods-WaaatcherDemo-umbrella.h */,
+				85A426CD23B6EE3C34C7EB41E2900572 /* Pods-WaaatcherDemo.debug.xcconfig */,
+				E85FA9BDA9D98F5A120FFB56C6A24B94 /* Pods-WaaatcherDemo.release.xcconfig */,
 			);
-			name = Waaatcher;
-			path = ../..;
+			name = "Pods-WaaatcherDemo";
+			path = "Target Support Files/Pods-WaaatcherDemo";
 			sourceTree = "<group>";
 		};
-		AD7B84B3EFF0EC98A7439DFC8475CDA9 /* Products */ = {
+		9E4332E0C894A7882CFF4D8A5D66DE54 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1CC7BDD7BB757458BE3470055BBE6BC7 /* libPods-Waaatcher.a */,
-				CCF4F5FB930C0573F0B620B5A977FBDE /* libWaaatcher.a */,
+				AE5B713E73E24F355E9A0C40B1A42656 /* Waaatcher.modulemap */,
+				333BD3ECD35A77E36DDC3CA68575D929 /* Waaatcher.xcconfig */,
+				F6096E4E3AABA19862B11EB38883232F /* Waaatcher-dummy.m */,
+				02153B7B406A35F7013EE0AAE856B449 /* Waaatcher-prefix.pch */,
+				A8A573C4E11CBAD052C31645971B36A8 /* Waaatcher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Waaatcher";
+			sourceTree = "<group>";
+		};
+		B3D4B220F51CAD4067A1AB242F0AF746 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14E49DE522C24F30286F69DD16811BE8 /* libPods-WaaatcherDemo.a */,
+				98A485CB600602290AB8E7AFC5C3607C /* libWaaatcher.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B593AE8E4CD553941154E17D375072C6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9AD073A8C70606C503E0E12C84409D30 /* LICENSE */,
+				B35E07F3BFE98E51E23216E15CB72C86 /* README.md */,
+				6BEF87EFB8CD49EACBD351F8872A0205 /* Waaatcher.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D66B2AE6FDCACD42F29B370B61C226CC /* Development Pods */,
+				5DB083BD1898828E8453AF38F180F791 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				AD7B84B3EFF0EC98A7439DFC8475CDA9 /* Products */,
-				E30A28F16A90C321FA151BE2B301884B /* Targets Support Files */,
+				B3D4B220F51CAD4067A1AB242F0AF746 /* Products */,
+				EBFFEEE16737034C910743E2B84A14EC /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D66B2AE6FDCACD42F29B370B61C226CC /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AD34BE4C1A1C7D6AE8906B453F16580F /* Waaatcher */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -120,90 +141,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E30A28F16A90C321FA151BE2B301884B /* Targets Support Files */ = {
+		E192212DF56FD41FDA28B65785CF526F /* Waaatcher */ = {
 			isa = PBXGroup;
 			children = (
-				FF16C5341051322BACC418E2297D667F /* Pods-Waaatcher */,
+				9DEED76B38289647FBAA1ED73CECF4AD /* FSEvent.swift */,
+				051067C144605C823987590DEA317BA2 /* FSEventFlags.swift */,
+				00FD2D611333AA0B0DC0C47B202FD272 /* Waaatcher.swift */,
+				B593AE8E4CD553941154E17D375072C6 /* Pod */,
+				9E4332E0C894A7882CFF4D8A5D66DE54 /* Support Files */,
+			);
+			name = Waaatcher;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EBFFEEE16737034C910743E2B84A14EC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D7F58A77BF895CCC15A28CB4B206141 /* Pods-WaaatcherDemo */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		E7DBA4EB100D0166C091A8AE52784973 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CF7A1D55E05BFBA317E59FB38C497B5C /* Waaatcher.modulemap */,
-				0DD40F97DE4A70F41F895D99812259BD /* Waaatcher.xcconfig */,
-				EF764C1F24CDFC19C997A2F5ECEA487C /* Waaatcher-dummy.m */,
-				2E605ACEFDB8374603AD7D3587E0BE63 /* Waaatcher-prefix.pch */,
-				0C7B82B115C908B492EAD9E0649951C0 /* Waaatcher-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Waaatcher";
-			sourceTree = "<group>";
-		};
-		FF16C5341051322BACC418E2297D667F /* Pods-Waaatcher */ = {
-			isa = PBXGroup;
-			children = (
-				8AEDB42968352137D36E1C140A2F75CE /* Pods-Waaatcher.modulemap */,
-				FDC714C9497C04D483C1706B1F74E4A2 /* Pods-Waaatcher-acknowledgements.markdown */,
-				1354331029890144AB4C5EC4B45D17D3 /* Pods-Waaatcher-acknowledgements.plist */,
-				1D62FCD10A8EC144A84D0E1A7882BE25 /* Pods-Waaatcher-dummy.m */,
-				9537FEE4D32C3318A5A4A1DDE64B116D /* Pods-Waaatcher-umbrella.h */,
-				2CA489E547FEF8311FA0B4AEA558660E /* Pods-Waaatcher.debug.xcconfig */,
-				D6F58E7DCAC630E99D9A626E34270743 /* Pods-Waaatcher.release.xcconfig */,
-			);
-			name = "Pods-Waaatcher";
-			path = "Target Support Files/Pods-Waaatcher";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		21FB87B6101A9C9CDF0C8BE85C4B6C8C /* Headers */ = {
+		4AD4A650D4534F55F11D7068D4DA2ECA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F8616BB91A019F0F524501E4F764F23 /* Pods-Waaatcher-umbrella.h in Headers */,
+				9E37135CBCD78192F652C36C21E9B3E2 /* Waaatcher-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7BA205876D35D66BF0E33717AA0416E /* Headers */ = {
+		8EEDE7DF783AB41C1589E6ED3C831FF8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8AEE6540101555C5DCE6951228A34F3 /* Waaatcher-umbrella.h in Headers */,
+				B9A64B7957C2AB6E9618D59157B6B8DE /* Pods-WaaatcherDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1143619334D20638B68398BD8705F912 /* Pods-Waaatcher */ = {
+		20889E896EC376B9537698DFF31E4220 /* Waaatcher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1616CB4A602832ADBDE322144BEB9697 /* Build configuration list for PBXNativeTarget "Pods-Waaatcher" */;
+			buildConfigurationList = DED8F548BC325F036191DD8FCB586A98 /* Build configuration list for PBXNativeTarget "Waaatcher" */;
 			buildPhases = (
-				21FB87B6101A9C9CDF0C8BE85C4B6C8C /* Headers */,
-				F66EEE665D1E416A468FDF11C427432D /* Sources */,
-				43E6E554F3F3B6BB1BBB91949613444F /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8B9DDDE3E9E24FAC2EA5583385A3035C /* PBXTargetDependency */,
-			);
-			name = "Pods-Waaatcher";
-			productName = "Pods-Waaatcher";
-			productReference = 1CC7BDD7BB757458BE3470055BBE6BC7 /* libPods-Waaatcher.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		748748BC841A777E6B786563E74173A0 /* Waaatcher */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 404F153CE03BD4C106394B947952E22C /* Build configuration list for PBXNativeTarget "Waaatcher" */;
-			buildPhases = (
-				D7BA205876D35D66BF0E33717AA0416E /* Headers */,
-				94DE4E370774688793E3F38BE5AF9976 /* Sources */,
-				6ED348B57A968FD832A900B98C01CA6B /* Frameworks */,
-				F7278661368566688FD1F66D419A3B86 /* Copy generated compatibility header */,
+				4AD4A650D4534F55F11D7068D4DA2ECA /* Headers */,
+				074D64814ED5ECF7B17A44BF735E66EB /* Sources */,
+				B794DD78315EE3561D3B644381C8C039 /* Frameworks */,
+				D3B440C22CF56A2A7B46F539AD17C2B6 /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
@@ -211,7 +199,25 @@
 			);
 			name = Waaatcher;
 			productName = Waaatcher;
-			productReference = CCF4F5FB930C0573F0B620B5A977FBDE /* libWaaatcher.a */;
+			productReference = 98A485CB600602290AB8E7AFC5C3607C /* libWaaatcher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DC5297F2377A330C92F90C40EBBF1B46 /* Pods-WaaatcherDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C9618FB67E4F4712C2339E083C676A /* Build configuration list for PBXNativeTarget "Pods-WaaatcherDemo" */;
+			buildPhases = (
+				8EEDE7DF783AB41C1589E6ED3C831FF8 /* Headers */,
+				831C5F6C6E06A7231AC0907717FF98D0 /* Sources */,
+				8AF3C8E50D3F83762520CC14298AD0F4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E8B1FDBF8226E53D025E17018F16CBC /* PBXTargetDependency */,
+			);
+			name = "Pods-WaaatcherDemo";
+			productName = "Pods-WaaatcherDemo";
+			productReference = 14E49DE522C24F30286F69DD16811BE8 /* libPods-WaaatcherDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -231,18 +237,18 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = AD7B84B3EFF0EC98A7439DFC8475CDA9 /* Products */;
+			productRefGroup = B3D4B220F51CAD4067A1AB242F0AF746 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1143619334D20638B68398BD8705F912 /* Pods-Waaatcher */,
-				748748BC841A777E6B786563E74173A0 /* Waaatcher */,
+				DC5297F2377A330C92F90C40EBBF1B46 /* Pods-WaaatcherDemo */,
+				20889E896EC376B9537698DFF31E4220 /* Waaatcher */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F7278661368566688FD1F66D419A3B86 /* Copy generated compatibility header */ = {
+		D3B440C22CF56A2A7B46F539AD17C2B6 /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,35 +275,83 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		94DE4E370774688793E3F38BE5AF9976 /* Sources */ = {
+		074D64814ED5ECF7B17A44BF735E66EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91949FF07A81908A8703EFFD249DB605 /* Waaatcher-dummy.m in Sources */,
-				3F17A451A19F108798A3EC60A927DBC3 /* Waaatcher.swift in Sources */,
+				2B5BBBC52FA189A3035052234CBCEC59 /* FSEvent.swift in Sources */,
+				E4516FAB2E1F7CAD19A422887B508529 /* FSEventFlags.swift in Sources */,
+				3E9FBCC24E70719B3AB625A20A253A1F /* Waaatcher-dummy.m in Sources */,
+				3BBC9202434957FC43291350CD02208E /* Waaatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F66EEE665D1E416A468FDF11C427432D /* Sources */ = {
+		831C5F6C6E06A7231AC0907717FF98D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADA7C1839148E2B90C40B3FD8FE88510 /* Pods-Waaatcher-dummy.m in Sources */,
+				60B0D10C0B32F6852CF11156294C96F3 /* Pods-WaaatcherDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8B9DDDE3E9E24FAC2EA5583385A3035C /* PBXTargetDependency */ = {
+		1E8B1FDBF8226E53D025E17018F16CBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Waaatcher;
-			target = 748748BC841A777E6B786563E74173A0 /* Waaatcher */;
-			targetProxy = D4D9413A8B55F1944FDD4CF0829AACD2 /* PBXContainerItemProxy */;
+			target = 20889E896EC376B9537698DFF31E4220 /* Waaatcher */;
+			targetProxy = 6E9E0CE9CF155F181BDABA90E09A459C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		027F689C6E2B8D5F8684D81823DD7864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E85FA9BDA9D98F5A120FFB56C6A24B94 /* Pods-WaaatcherDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-WaaatcherDemo/Pods-WaaatcherDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1E6D752D069DE25DC87C8039880F5285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85A426CD23B6EE3C34C7EB41E2900572 /* Pods-WaaatcherDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-WaaatcherDemo/Pods-WaaatcherDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		1EB8832A8751D81A61E9F26DFDBC8AFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -422,9 +476,9 @@
 			};
 			name = Debug;
 		};
-		4F6CF7AF81F7FEE1E3FE9854F7CAF109 /* Release */ = {
+		6EA4BE03AE07F49E7C27F58890D767C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DD40F97DE4A70F41F895D99812259BD /* Waaatcher.xcconfig */;
+			baseConfigurationReference = 333BD3ECD35A77E36DDC3CA68575D929 /* Waaatcher.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -434,80 +488,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				EXECUTABLE_PREFIX = lib;
 				GCC_PREFIX_HEADER = "Target Support Files/Waaatcher/Waaatcher-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = Headers/Public/Waaatcher/Waaatcher.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Waaatcher;
-				PRODUCT_NAME = Waaatcher;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
-		756FE4A4789ECCCB30FCE6B0E4814782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6F58E7DCAC630E99D9A626E34270743 /* Pods-Waaatcher.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Pods-Waaatcher/Pods-Waaatcher.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		91D805F9F1778BF11D9E15834E9E7BA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CA489E547FEF8311FA0B4AEA558660E /* Pods-Waaatcher.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Pods-Waaatcher/Pods-Waaatcher.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A3D599DAE4E61DD2C2B24E5BEBE86049 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DD40F97DE4A70F41F895D99812259BD /* Waaatcher.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/Waaatcher/Waaatcher-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = Headers/Public/Waaatcher/Waaatcher.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -521,33 +502,60 @@
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
+		};
+		C608DE67E6AEFE6B0EB29CF416B85D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 333BD3ECD35A77E36DDC3CA68575D929 /* Waaatcher.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Waaatcher/Waaatcher-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = Headers/Public/Waaatcher/Waaatcher.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Waaatcher;
+				PRODUCT_NAME = Waaatcher;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1616CB4A602832ADBDE322144BEB9697 /* Build configuration list for PBXNativeTarget "Pods-Waaatcher" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				91D805F9F1778BF11D9E15834E9E7BA1 /* Debug */,
-				756FE4A4789ECCCB30FCE6B0E4814782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		404F153CE03BD4C106394B947952E22C /* Build configuration list for PBXNativeTarget "Waaatcher" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A3D599DAE4E61DD2C2B24E5BEBE86049 /* Debug */,
-				4F6CF7AF81F7FEE1E3FE9854F7CAF109 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				352636A4D7EE969E29CE8E210D1D7006 /* Debug */,
 				1EB8832A8751D81A61E9F26DFDBC8AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C9618FB67E4F4712C2339E083C676A /* Build configuration list for PBXNativeTarget "Pods-WaaatcherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E6D752D069DE25DC87C8039880F5285 /* Debug */,
+				027F689C6E2B8D5F8684D81823DD7864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED8F548BC325F036191DD8FCB586A98 /* Build configuration list for PBXNativeTarget "Waaatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA4BE03AE07F49E7C27F58890D767C1 /* Debug */,
+				C608DE67E6AEFE6B0EB29CF416B85D9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
