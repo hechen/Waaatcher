@@ -1,6 +1,6 @@
 # Waaatcher
 
-[![Build Status](https://travis-ci.com/hechen/Waaatcher.svg?branch=master)](https://travis-ci.com/hechen/Waaatcher)
+[![Build Status](https://travis-ci.com/hechen/Waaatcher.svg?branch=master)](https://travis-ci.com/hechen/Waaatcher)  ![Cocoapods](https://img.shields.io/cocoapods/v/Waaatcher.svg)   ![Cocoapods platforms](https://img.shields.io/cocoapods/p/Waaatcher.svg)   ![Swift Version](https://img.shields.io/badge/Swift-4.2-F16D39.svg?style=flat)
 
 File Watcher Wrapper for macOS
 
