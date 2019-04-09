@@ -1,5 +1,5 @@
 PODS:
-  - Waaatcher (0.0.1)
+  - Waaatcher (0.0.5)
 
 DEPENDENCIES:
   - Waaatcher (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Waaatcher: 457155aadd98aeca81a52047f151a1c0d9e3a4b4
+  Waaatcher: 9ab9416944a2b13a17c1986b51ffe418abf71a24
 
 PODFILE CHECKSUM: 896dcb18cd9865fabf040175cbfc88089f379bef
 

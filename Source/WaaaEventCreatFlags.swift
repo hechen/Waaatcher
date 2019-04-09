@@ -15,7 +15,7 @@ import CoreServices
  *    Flags that can be passed to the FSEventStreamCreate...()
  *    functions to modify the behavior of the stream being created.
  */
-public struct EventCreatFlags: OptionSet {
+public struct WaaaEventCreatFlags: OptionSet {
     public var rawValue: Int
     public init(rawValue: Int) {
         self.rawValue = rawValue
@@ -28,7 +28,7 @@ public struct EventCreatFlags: OptionSet {
     /*
      * The default.
      */
-    public static let none = EventCreatFlags(rawValue: kFSEventStreamCreateFlagNone)
+    public static let none = WaaaEventCreatFlags(rawValue: kFSEventStreamCreateFlagNone)
     
     /*
      * The framework will invoke your callback function with CF types
@@ -36,7 +36,7 @@ public struct EventCreatFlags: OptionSet {
      * rather than a raw C array of raw C string pointers). See
      * FSEventStreamCallback.
      */
-    public static let useCFTypes = EventCreatFlags(rawValue: kFSEventStreamCreateFlagUseCFTypes)
+    public static let useCFTypes = WaaaEventCreatFlags(rawValue: kFSEventStreamCreateFlagUseCFTypes)
     
     /*
      * Affects the meaning of the latency parameter. If you specify this
@@ -55,7 +55,7 @@ public struct EventCreatFlags: OptionSet {
      * seconds. This is the default behavior and is more appropriate for
      * background, daemon or batch processing apps.
      */
-    public static let noDefer = EventCreatFlags(rawValue: kFSEventStreamCreateFlagNoDefer)
+    public static let noDefer = WaaaEventCreatFlags(rawValue: kFSEventStreamCreateFlagNoDefer)
     
     /*
      * Request notifications of changes along the path to the path(s)
@@ -72,7 +72,7 @@ public struct EventCreatFlags: OptionSet {
      * before creating the stream so that you have a file descriptor for
      * it and can issue an F_GETPATH fcntl() to find the current path.
      */
-    public static let watchRoot = EventCreatFlags(rawValue: kFSEventStreamCreateFlagWatchRoot)
+    public static let watchRoot = WaaaEventCreatFlags(rawValue: kFSEventStreamCreateFlagWatchRoot)
     
     /*
      * Don't send events that were triggered by the current process. This
@@ -85,7 +85,7 @@ public struct EventCreatFlags: OptionSet {
      * unable to provide information about the responsible process.
      */
     @available(OSX 10.6, *)
-    public static let ignoreSelf = EventCreatFlags(rawValue: kFSEventStreamCreateFlagIgnoreSelf)
+    public static let ignoreSelf = WaaaEventCreatFlags(rawValue: kFSEventStreamCreateFlagIgnoreSelf)
     
     /*
      * Request file-level notifications.  Your stream will receive events
@@ -94,7 +94,7 @@ public struct EventCreatFlags: OptionSet {
      * care as it will generate significantly more events than without it.
      */
     @available(OSX 10.7, *)
-    public static let fileEvents = EventCreatFlags(rawValue: kFSEventStreamCreateFlagFileEvents)
+    public static let fileEvents = WaaaEventCreatFlags(rawValue: kFSEventStreamCreateFlagFileEvents)
     
     /*
      * Tag events that were triggered by the current process with the "OwnEvent" flag.
@@ -104,7 +104,7 @@ public struct EventCreatFlags: OptionSet {
      * those delivered before the HistoryDone sentinel event.
      */
     @available(OSX 10.9, *)
-    public static let markSelf = EventCreatFlags(rawValue: kFSEventStreamCreateFlagMarkSelf)
+    public static let markSelf = WaaaEventCreatFlags(rawValue: kFSEventStreamCreateFlagMarkSelf)
     
     /*
      * Requires kFSEventStreamCreateFlagUseCFTypes and instructs the
@@ -116,12 +116,12 @@ public struct EventCreatFlags: OptionSet {
      * that may be set in the dictionary.  (See also FSEventStreamCallback.)
      */
     @available(OSX 10.13, *)
-    public static let useExtendedData = EventCreatFlags(rawValue: kFSEventStreamCreateFlagUseExtendedData)
+    public static let useExtendedData = WaaaEventCreatFlags(rawValue: kFSEventStreamCreateFlagUseExtendedData)
 }
 
 
 
-extension EventCreatFlags: CustomStringConvertible {
+extension WaaaEventCreatFlags: CustomStringConvertible {
     public var description: String {
         var flags: [String] = []
         if self.contains(.none) { flags.append("none") }

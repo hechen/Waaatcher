@@ -58,6 +58,7 @@ class ViewController: NSViewController {
                 self?.output("Event: \(event)")
             }
         }
+        
         do {
             if let ret = try watcher?.start(), ret {
                 output("Create Wathcer Successfully.")

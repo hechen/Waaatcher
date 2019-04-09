@@ -40,14 +40,14 @@ watcher.stop()
 Each event is a structure which contains three parts as below
 
 ``` Swift
-struct FSEvent {
+struct WaaaFSEvent {
     let path: String
-    let flags: FSEventFlags
+    let flags: WaaaFSEventFlags
     let ID: FSEventStreamEventId
 }
 ```
 
-Also, `FSEventFlags` is defined as the wrapper of unreadable `FSEventStreamEventFlags`.
+Also, `WaaaFSEventFlags` is defined as the wrapper of unreadable `FSEventStreamEventFlags`.
 
 
 

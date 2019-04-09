@@ -33,7 +33,7 @@ extension URL: ValidWatchPath {
 }
 
 
-public typealias WaaatcherEventCallback = ([FSEvent]) -> Void
+public typealias WaaatcherEventCallback = ([WaaaFSEvent]) -> Void
 
 
 /*
@@ -52,7 +52,7 @@ public class Waaatcher {
     
     private let sinceWhen: FSEventStreamEventId
     
-    private let eventCreateFlags: EventCreatFlags
+    private let eventCreateFlags: WaaaEventCreatFlags
     
     private let scheduledRunloop: RunLoop
     
@@ -76,7 +76,7 @@ public class Waaatcher {
     public init(paths: [ValidWatchPath],
                 latency: Double = 3.0,
                 sinceWhen: FSEventStreamEventId = FSEventStreamEventId(kFSEventStreamEventIdSinceNow),
-                eventCreateFlags: EventCreatFlags = [EventCreatFlags.useCFTypes, EventCreatFlags.fileEvents],
+                eventCreateFlags: WaaaEventCreatFlags = [WaaaEventCreatFlags.useCFTypes, WaaaEventCreatFlags.fileEvents],
                 scheduledRunloop: RunLoop = RunLoop.main,
                 eventsCallback: WaaatcherEventCallback?) {
         
@@ -135,12 +135,12 @@ public class Waaatcher {
             }
             
             // Each event contain path, flag and Id
-            var events = [FSEvent]()
+            var events = [WaaaFSEvent]()
             for i in 0..<numEvents {
                 let path = eventPaths[i]
-                let flags = EventFlags(eventFlags: eventFlags[i])
+                let flags = WaaaEventFlags(eventFlags: eventFlags[i])
                 let id = eventIds[i]
-                events.append(FSEvent(path: path, flags: flags, ID: id))
+                events.append(WaaaFSEvent(path: path, flags: flags, ID: id))
             }
             watcher.watcherEventCallback?(events)
             

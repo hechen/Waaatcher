@@ -9,13 +9,13 @@
 import Foundation
 import CoreServices
 
-public struct FSEvent {
+public struct WaaaFSEvent {
     let path: String
-    let flags: EventFlags
+    let flags: WaaaEventFlags
     let ID: FSEventStreamEventId
 }
 
-extension FSEvent: CustomStringConvertible {
+extension WaaaFSEvent: CustomStringConvertible {
     public var description: String {
         return "File System Event: [\(path)], ID: \(ID), Flags: \(flags)"
     }

@@ -12,7 +12,7 @@ import CoreServices
 /*
  *  FSEventStreamEventFlags
  */
-public struct EventFlags: OptionSet {
+public struct WaaaEventFlags: OptionSet {
     public var rawValue: Int
     public init(rawValue: Int) {
         self.rawValue = rawValue
@@ -35,7 +35,7 @@ public struct EventFlags: OptionSet {
      * UserDropped or
      * KernelDropped.
      */
-    public static let mustScanSubDirs = EventFlags(rawValue: kFSEventStreamEventFlagMustScanSubDirs)
+    public static let mustScanSubDirs = WaaaEventFlags(rawValue: kFSEventStreamEventFlagMustScanSubDirs)
     
     /*
      * The UserDropped or
@@ -50,8 +50,8 @@ public struct EventFlags: OptionSet {
      * MustScanSubDirs flag; these flags (if
      * present) only provide information to help you diagnose the problem.
      */
-    public static let userDropped = EventFlags(rawValue: kFSEventStreamEventFlagUserDropped)
-    public static let kernelDropped = EventFlags(rawValue: kFSEventStreamEventFlagKernelDropped)
+    public static let userDropped = WaaaEventFlags(rawValue: kFSEventStreamEventFlagUserDropped)
+    public static let kernelDropped = WaaaEventFlags(rawValue: kFSEventStreamEventFlagKernelDropped)
     
     /*
      * If EventIdsWrapped is set, it means the
@@ -59,7 +59,7 @@ public struct EventFlags: OptionSet {
      * previously-issued event ID's are no longer valid arguments for the
      * sinceWhen parameter of the FSEventStreamCreate...() functions.
      */
-    public static let eventIdsWrapped = EventFlags(rawValue: kFSEventStreamEventFlagEventIdsWrapped)
+    public static let eventIdsWrapped = WaaaEventFlags(rawValue: kFSEventStreamEventFlagEventIdsWrapped)
     
     /*
      * Denotes a sentinel event sent to mark the end of the "historical"
@@ -72,7 +72,7 @@ public struct EventFlags: OptionSet {
      * HistoryDone flag is set. The client should
      * ignore the path supplied in this callback.
      */
-    public static let historyDone = EventFlags(rawValue: kFSEventStreamEventFlagHistoryDone)
+    public static let historyDone = WaaaEventFlags(rawValue: kFSEventStreamEventFlagHistoryDone)
     
     /*
      * Denotes a special event sent when there is a change to one of the
@@ -85,7 +85,7 @@ public struct EventFlags: OptionSet {
      * kFSEventStreamCreateFlagWatchRoot to FSEventStreamCreate...() when
      * you created the stream.
      */
-    public static let rootChanged = EventFlags(rawValue: kFSEventStreamEventFlagRootChanged)
+    public static let rootChanged = WaaaEventFlags(rawValue: kFSEventStreamEventFlagRootChanged)
     
     /*
      * Denotes a special event sent when a volume is mounted underneath
@@ -100,7 +100,7 @@ public struct EventFlags: OptionSet {
      * aware of the MNT_DONTBROWSE flag that is set for volumes which
      * should not be displayed by user interface elements.
      */
-    public static let mount = EventFlags(rawValue: kFSEventStreamEventFlagMount)
+    public static let mount = WaaaEventFlags(rawValue: kFSEventStreamEventFlagMount)
     
     /*
      * Denotes a special event sent when a volume is unmounted underneath
@@ -113,91 +113,91 @@ public struct EventFlags: OptionSet {
      * unmounting a volume could uncover an arbitrarily large directory
      * hierarchy, although Mac OS X never does that.
      */
-    public static let unmount = EventFlags(rawValue: kFSEventStreamEventFlagUnmount)
+    public static let unmount = WaaaEventFlags(rawValue: kFSEventStreamEventFlagUnmount)
     
     /*
      * A file system object was created at the specific path supplied in this event.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static let itemCreated = EventFlags(rawValue: kFSEventStreamEventFlagItemCreated)
+    public static let itemCreated = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemCreated)
     
     /*
      * A file system object was removed at the specific path supplied in this event.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static let itemRemoved = EventFlags(rawValue: kFSEventStreamEventFlagItemRemoved)
+    public static let itemRemoved = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemRemoved)
     
     /*
      * A file system object at the specific path supplied in this event had its metadata modified.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static let itemInodeMetaMod = EventFlags(rawValue: kFSEventStreamEventFlagItemInodeMetaMod)
+    public static let itemInodeMetaMod = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemInodeMetaMod)
     
     /*
      * A file system object was renamed at the specific path supplied in this event.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static let itemRenamed = EventFlags(rawValue: kFSEventStreamEventFlagItemRenamed)
+    public static let itemRenamed = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemRenamed)
     
     /*
      * A file system object at the specific path supplied in this event had its data modified.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static let itemModified = EventFlags(rawValue: kFSEventStreamEventFlagItemModified)
+    public static let itemModified = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemModified)
     
     /*
      * A file system object at the specific path supplied in this event had its FinderInfo data modified.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static let itemFinderInfoMod = EventFlags(rawValue: kFSEventStreamEventFlagItemFinderInfoMod)
+    public static let itemFinderInfoMod = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemFinderInfoMod)
     
     /*
      * A file system object at the specific path supplied in this event had its ownership changed.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static let itemChangeOwner = EventFlags(rawValue: kFSEventStreamEventFlagItemChangeOwner)
+    public static let itemChangeOwner = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemChangeOwner)
     
     /*
      * A file system object at the specific path supplied in this event had its extended attributes modified.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static let itemXattrMod = EventFlags(rawValue: kFSEventStreamEventFlagItemXattrMod)
+    public static let itemXattrMod = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemXattrMod)
     
     /*
      * The file system object at the specific path supplied in this event is a regular file.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static let itemIsFile = EventFlags(rawValue: kFSEventStreamEventFlagItemIsFile)
+    public static let itemIsFile = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemIsFile)
     
     /*
      * The file system object at the specific path supplied in this event is a directory.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static let itemIsDir = EventFlags(rawValue: kFSEventStreamEventFlagItemIsDir)
+    public static let itemIsDir = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemIsDir)
     
     /*
      * The file system object at the specific path supplied in this event is a symbolic link.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.7, *)
-    public static let itemIsSymlink = EventFlags(rawValue: kFSEventStreamEventFlagItemIsSymlink)
+    public static let itemIsSymlink = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemIsSymlink)
     
     /*
      * Indicates the event was triggered by the current process.
      * (This flag is only ever set if you specified the MarkSelf flag when creating the stream.)
      */
     @available(OSX 10.9, *)
-    public static let ownEvent = EventFlags(rawValue: kFSEventStreamEventFlagOwnEvent)
+    public static let ownEvent = WaaaEventFlags(rawValue: kFSEventStreamEventFlagOwnEvent)
     
     
     /*
@@ -205,23 +205,23 @@ public struct EventFlags: OptionSet {
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.10, *)
-    public static let itemIsHardlink = EventFlags(rawValue: kFSEventStreamEventFlagItemIsHardlink)
+    public static let itemIsHardlink = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemIsHardlink)
   
     /* Indicates the object at the specific path supplied in this event was the last hard link.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.10, *)
-    public static let itemIsLastHardlink = EventFlags(rawValue: kFSEventStreamEventFlagItemIsLastHardlink)
+    public static let itemIsLastHardlink = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemIsLastHardlink)
     
     /*
      * The file system object at the specific path supplied in this event is a clone or was cloned.
      * (This flag is only ever set if you specified the FileEvents flag when creating the stream.)
      */
     @available(OSX 10.13, *)
-    public static let itemCloned = EventFlags(rawValue: kFSEventStreamEventFlagItemCloned)
+    public static let itemCloned = WaaaEventFlags(rawValue: kFSEventStreamEventFlagItemCloned)
 }
 
-extension EventFlags: CustomStringConvertible {
+extension WaaaEventFlags: CustomStringConvertible {
     public var description: String {
         var flags: [String] = []
         if self.contains(.mustScanSubDirs) { flags.append("mustScanSubDirs") }

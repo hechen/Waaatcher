@@ -1,6 +1,6 @@
 {
   "name": "Waaatcher",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "authors": [
     "Chen",
     {
@@ -15,7 +15,7 @@
   },
   "source": {
     "git": "https://github.com/hechen/Waaatcher.git",
-    "tag": "0.0.1"
+    "tag": "0.0.5"
   },
   "source_files": "Source/**/**",
   "swift_version": "4.2",
