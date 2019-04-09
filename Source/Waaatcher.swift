@@ -52,7 +52,7 @@ public class Waaatcher {
     
     private let sinceWhen: FSEventStreamEventId
     
-    private let eventFlags: FSEventStreamEventFlags
+    private let eventCreateFlags: EventCreatFlags
     
     private let scheduledRunloop: RunLoop
     
@@ -63,30 +63,35 @@ public class Waaatcher {
     deinit {
         stop()
     }
-
+    
+    
+    /// Initialize a Waaatcher Object
+    ///
+    /// - Parameters:
+    ///   - paths: File paths to be watched
+    ///   - latency: Event delay after occur
+    ///   - sinceWhen: Events callback after which event. Default is sineNow.
+    ///   - eventCreateFlags: FSEventStream create flags. Details at EventCreatFlags.swift
+    ///   - scheduledRunloop: FSEvent will be scheduled on which runloop
     public init(paths: [ValidWatchPath],
-         latency: Double = 3.0,
-         sinceWhen: FSEventStreamEventId = FSEventStreamEventId(kFSEventStreamEventIdSinceNow),
-         eventFlags: FSEventStreamEventFlags = UInt32(kFSEventStreamCreateFlagUseCFTypes | kFSEventStreamCreateFlagFileEvents),
-         scheduledRunloop: RunLoop = RunLoop.main) {
+                latency: Double = 3.0,
+                sinceWhen: FSEventStreamEventId = FSEventStreamEventId(kFSEventStreamEventIdSinceNow),
+                eventCreateFlags: EventCreatFlags = [EventCreatFlags.useCFTypes, EventCreatFlags.fileEvents],
+                scheduledRunloop: RunLoop = RunLoop.main) {
         
         self.pathsToWatch = paths
         self.latency = latency
         self.sinceWhen = sinceWhen
-        self.eventFlags = eventFlags
+        self.eventCreateFlags = eventCreateFlags
         self.scheduledRunloop = scheduledRunloop
     }
     
-    /*
-     func FSEventStreamCreate(_ allocator: CFAllocator?,
-     _ callback: @escaping FSEventStreamCallback,
-     _ context: UnsafeMutablePointer<FSEventStreamContext>?,
-     _ pathsToWatch: CFArray,
-     _ sinceWhen: FSEventStreamEventId,
-     _ latency: CFTimeInterval,
-     _ flags: FSEventStreamCreateFlags) -> FSEventStreamRef?
-     */
-    public func start() -> Bool {
+    
+    /// Start working.
+    ///
+    /// - Returns: start successfully or not
+    /// - Throws: When waaatcher's paths check fails, throw invalid error
+    public func start() throws -> Bool {
         
         /* Step 1   Create FSEventStream */
         
@@ -100,11 +105,21 @@ public class Waaatcher {
         
         
         /* 1.2 Prepare callback function */
+        var validFilePaths = [String]()
+        for path in pathsToWatch {
+            do {
+                let checkedPath = try path.asWatchedPath()
+                validFilePaths.append(checkedPath)
+            } catch {
+                throw WaaatcherError.invalidPath(path: path)
+            }
+        }
+        
         guard let stream = FSEventStreamCreate(nil, streamCallback, &context,
                                                pathsToWatch as CFArray,
                                                sinceWhen,
                                                latency,
-                                               eventFlags) else {
+                                               UInt32(eventCreateFlags.rawValue)) else {
                                                 return false
         }
         
@@ -167,7 +182,7 @@ fileprivate func streamCallback(streamRef: OpaquePointer,
     var events = [FSEvent]()
     for i in 0..<numEvents {
         let path = eventPaths[i]
-        let flags = FSEventFlags(eventFlags: eventFlags[i])
+        let flags = EventFlags(eventFlags: eventFlags[i])
         let id = eventIds[i]
         events.append(FSEvent(path: path, flags: flags, ID: id))
     }

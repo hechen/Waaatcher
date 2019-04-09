@@ -19,7 +19,7 @@ File Watcher Wrapper for macOS
 #### Start
 
 ``` Swift
-let watcher = Waaatcher(paths: [path])
+let watcher = Waaatcher(paths: [path1, path2, path3])
 
 // ...
 watcher.watcherEventCallback = { events in
@@ -47,7 +47,7 @@ struct FSEvent {
 }
 ```
 
-Also, `FSEventFlags` is defined for wrap default unreadable `FSEventStreamEventFlags`.
+Also, `FSEventFlags` is defined as the wrapper of unreadable `FSEventStreamEventFlags`.
 
 
 

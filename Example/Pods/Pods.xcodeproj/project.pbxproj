@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B5BBBC52FA189A3035052234CBCEC59 /* FSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEED76B38289647FBAA1ED73CECF4AD /* FSEvent.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3BBC9202434957FC43291350CD02208E /* Waaatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FD2D611333AA0B0DC0C47B202FD272 /* Waaatcher.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3E9FBCC24E70719B3AB625A20A253A1F /* Waaatcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6096E4E3AABA19862B11EB38883232F /* Waaatcher-dummy.m */; };
 		60B0D10C0B32F6852CF11156294C96F3 /* Pods-WaaatcherDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5992E6EE69C0514AED6AA0FC5A8F4D27 /* Pods-WaaatcherDemo-dummy.m */; };
-		9E37135CBCD78192F652C36C21E9B3E2 /* Waaatcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A573C4E11CBAD052C31645971B36A8 /* Waaatcher-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		673571F9CD98DA3DEB7979AA7A0DAB98 /* Waaatcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D67770CDEDD474E34D80182B0655FA7F /* Waaatcher-dummy.m */; };
+		9CFDB7590FCCC8216E798524031111AC /* FSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C451015AC7CD43E636C0FE4276C47E8 /* FSEvent.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9E37135CBCD78192F652C36C21E9B3E2 /* Waaatcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F8758F1A40DA3D838D7245EAFCB6F0 /* Waaatcher-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B9A64B7957C2AB6E9618D59157B6B8DE /* Pods-WaaatcherDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD9761E019DA719A3A5E7D256E2BF7E /* Pods-WaaatcherDemo-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E4516FAB2E1F7CAD19A422887B508529 /* FSEventFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051067C144605C823987590DEA317BA2 /* FSEventFlags.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CE9FCA1FA9A712FFFC75A79610850DCD /* EventCreateFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6EABDF9839FF6E238E50B4F95C2444 /* EventCreateFlags.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E4AFA6CE6602AFC6DCD091EC2A6B4A99 /* Waaatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3097A9CC4B4856E313F7492A3B284AA3 /* Waaatcher.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F1E206DFFFC7704EBD0E163056EF1837 /* EventFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D636887CB826AF387D7B11DAD58F /* EventFlags.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,27 +28,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00FD2D611333AA0B0DC0C47B202FD272 /* Waaatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Waaatcher.swift; path = Source/Waaatcher.swift; sourceTree = "<group>"; };
-		02153B7B406A35F7013EE0AAE856B449 /* Waaatcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Waaatcher-prefix.pch"; sourceTree = "<group>"; };
-		051067C144605C823987590DEA317BA2 /* FSEventFlags.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSEventFlags.swift; path = Source/FSEventFlags.swift; sourceTree = "<group>"; };
+		01DC453953C763A608DD1AA355A76136 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0F6EABDF9839FF6E238E50B4F95C2444 /* EventCreateFlags.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventCreateFlags.swift; path = Source/EventCreateFlags.swift; sourceTree = "<group>"; };
 		14E49DE522C24F30286F69DD16811BE8 /* libPods-WaaatcherDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WaaatcherDemo.a"; path = "libPods-WaaatcherDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		333BD3ECD35A77E36DDC3CA68575D929 /* Waaatcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Waaatcher.xcconfig; sourceTree = "<group>"; };
+		2C451015AC7CD43E636C0FE4276C47E8 /* FSEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSEvent.swift; path = Source/FSEvent.swift; sourceTree = "<group>"; };
+		3097A9CC4B4856E313F7492A3B284AA3 /* Waaatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Waaatcher.swift; path = Source/Waaatcher.swift; sourceTree = "<group>"; };
+		513A589A1C97CFB006A4462B48546A3D /* Waaatcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Waaatcher-prefix.pch"; sourceTree = "<group>"; };
 		5992E6EE69C0514AED6AA0FC5A8F4D27 /* Pods-WaaatcherDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaaatcherDemo-dummy.m"; sourceTree = "<group>"; };
 		5BA0236DC7A2BA391BB4062460DDD3F0 /* Pods-WaaatcherDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WaaatcherDemo.modulemap"; sourceTree = "<group>"; };
-		6BEF87EFB8CD49EACBD351F8872A0205 /* Waaatcher.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Waaatcher.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		85A426CD23B6EE3C34C7EB41E2900572 /* Pods-WaaatcherDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaaatcherDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		939D3AB957CE83E06396A25604AFAA05 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		98A485CB600602290AB8E7AFC5C3607C /* libWaaatcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWaaatcher.a; path = libWaaatcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AD073A8C70606C503E0E12C84409D30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DEED76B38289647FBAA1ED73CECF4AD /* FSEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSEvent.swift; path = Source/FSEvent.swift; sourceTree = "<group>"; };
 		A293F7F98442E7645C0E0D582C7A4DD0 /* Pods-WaaatcherDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaaatcherDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		A8A573C4E11CBAD052C31645971B36A8 /* Waaatcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Waaatcher-umbrella.h"; sourceTree = "<group>"; };
-		AE5B713E73E24F355E9A0C40B1A42656 /* Waaatcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Waaatcher.modulemap; sourceTree = "<group>"; };
 		B20BB6BDDA3794072FF1142BC369A485 /* Pods-WaaatcherDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaaatcherDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B35E07F3BFE98E51E23216E15CB72C86 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C3F8758F1A40DA3D838D7245EAFCB6F0 /* Waaatcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Waaatcher-umbrella.h"; sourceTree = "<group>"; };
+		CE5E0B6DDCC8ACBA4E60A6D51067D535 /* Waaatcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Waaatcher.xcconfig; sourceTree = "<group>"; };
+		D5F4983E148542D9015F764A3A8B0C88 /* Waaatcher.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Waaatcher.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D67770CDEDD474E34D80182B0655FA7F /* Waaatcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Waaatcher-dummy.m"; sourceTree = "<group>"; };
 		DBD9761E019DA719A3A5E7D256E2BF7E /* Pods-WaaatcherDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WaaatcherDemo-umbrella.h"; sourceTree = "<group>"; };
 		E85FA9BDA9D98F5A120FFB56C6A24B94 /* Pods-WaaatcherDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaaatcherDemo.release.xcconfig"; sourceTree = "<group>"; };
-		F6096E4E3AABA19862B11EB38883232F /* Waaatcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Waaatcher-dummy.m"; sourceTree = "<group>"; };
+		F2F44C431529D89A4CD17236C72F27D4 /* Waaatcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Waaatcher.modulemap; sourceTree = "<group>"; };
+		F4F4D636887CB826AF387D7B11DAD58F /* EventFlags.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventFlags.swift; path = Source/EventFlags.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +70,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5DB083BD1898828E8453AF38F180F791 /* Development Pods */ = {
+		2AD326DA2F885FA5F48573590F12592D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E192212DF56FD41FDA28B65785CF526F /* Waaatcher */,
+				F2F44C431529D89A4CD17236C72F27D4 /* Waaatcher.modulemap */,
+				CE5E0B6DDCC8ACBA4E60A6D51067D535 /* Waaatcher.xcconfig */,
+				D67770CDEDD474E34D80182B0655FA7F /* Waaatcher-dummy.m */,
+				513A589A1C97CFB006A4462B48546A3D /* Waaatcher-prefix.pch */,
+				C3F8758F1A40DA3D838D7245EAFCB6F0 /* Waaatcher-umbrella.h */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Waaatcher";
 			sourceTree = "<group>";
 		};
 		8D7F58A77BF895CCC15A28CB4B206141 /* Pods-WaaatcherDemo */ = {
@@ -91,17 +98,14 @@
 			path = "Target Support Files/Pods-WaaatcherDemo";
 			sourceTree = "<group>";
 		};
-		9E4332E0C894A7882CFF4D8A5D66DE54 /* Support Files */ = {
+		918FA4CB80B0236FF4C22730E42B442C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				AE5B713E73E24F355E9A0C40B1A42656 /* Waaatcher.modulemap */,
-				333BD3ECD35A77E36DDC3CA68575D929 /* Waaatcher.xcconfig */,
-				F6096E4E3AABA19862B11EB38883232F /* Waaatcher-dummy.m */,
-				02153B7B406A35F7013EE0AAE856B449 /* Waaatcher-prefix.pch */,
-				A8A573C4E11CBAD052C31645971B36A8 /* Waaatcher-umbrella.h */,
+				01DC453953C763A608DD1AA355A76136 /* LICENSE */,
+				939D3AB957CE83E06396A25604AFAA05 /* README.md */,
+				D5F4983E148542D9015F764A3A8B0C88 /* Waaatcher.podspec */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Waaatcher";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		B3D4B220F51CAD4067A1AB242F0AF746 /* Products */ = {
@@ -113,21 +117,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B593AE8E4CD553941154E17D375072C6 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				9AD073A8C70606C503E0E12C84409D30 /* LICENSE */,
-				B35E07F3BFE98E51E23216E15CB72C86 /* README.md */,
-				6BEF87EFB8CD49EACBD351F8872A0205 /* Waaatcher.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				5DB083BD1898828E8453AF38F180F791 /* Development Pods */,
+				F2B446269ACD8FC6FA7BBA6879AD5E92 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				B3D4B220F51CAD4067A1AB242F0AF746 /* Products */,
 				EBFFEEE16737034C910743E2B84A14EC /* Targets Support Files */,
@@ -141,14 +135,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E192212DF56FD41FDA28B65785CF526F /* Waaatcher */ = {
+		E4F126D5DAFF889577B96AB6639DAE0D /* Waaatcher */ = {
 			isa = PBXGroup;
 			children = (
-				9DEED76B38289647FBAA1ED73CECF4AD /* FSEvent.swift */,
-				051067C144605C823987590DEA317BA2 /* FSEventFlags.swift */,
-				00FD2D611333AA0B0DC0C47B202FD272 /* Waaatcher.swift */,
-				B593AE8E4CD553941154E17D375072C6 /* Pod */,
-				9E4332E0C894A7882CFF4D8A5D66DE54 /* Support Files */,
+				0F6EABDF9839FF6E238E50B4F95C2444 /* EventCreateFlags.swift */,
+				F4F4D636887CB826AF387D7B11DAD58F /* EventFlags.swift */,
+				2C451015AC7CD43E636C0FE4276C47E8 /* FSEvent.swift */,
+				3097A9CC4B4856E313F7492A3B284AA3 /* Waaatcher.swift */,
+				918FA4CB80B0236FF4C22730E42B442C /* Pod */,
+				2AD326DA2F885FA5F48573590F12592D /* Support Files */,
 			);
 			name = Waaatcher;
 			path = ../..;
@@ -160,6 +155,14 @@
 				8D7F58A77BF895CCC15A28CB4B206141 /* Pods-WaaatcherDemo */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F2B446269ACD8FC6FA7BBA6879AD5E92 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4F126D5DAFF889577B96AB6639DAE0D /* Waaatcher */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +192,7 @@
 			buildConfigurationList = DED8F548BC325F036191DD8FCB586A98 /* Build configuration list for PBXNativeTarget "Waaatcher" */;
 			buildPhases = (
 				4AD4A650D4534F55F11D7068D4DA2ECA /* Headers */,
-				074D64814ED5ECF7B17A44BF735E66EB /* Sources */,
+				327A9465DF5AA365388195E8C0D6753A /* Sources */,
 				B794DD78315EE3561D3B644381C8C039 /* Frameworks */,
 				D3B440C22CF56A2A7B46F539AD17C2B6 /* Copy generated compatibility header */,
 			);
@@ -275,14 +278,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		074D64814ED5ECF7B17A44BF735E66EB /* Sources */ = {
+		327A9465DF5AA365388195E8C0D6753A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B5BBBC52FA189A3035052234CBCEC59 /* FSEvent.swift in Sources */,
-				E4516FAB2E1F7CAD19A422887B508529 /* FSEventFlags.swift in Sources */,
-				3E9FBCC24E70719B3AB625A20A253A1F /* Waaatcher-dummy.m in Sources */,
-				3BBC9202434957FC43291350CD02208E /* Waaatcher.swift in Sources */,
+				CE9FCA1FA9A712FFFC75A79610850DCD /* EventCreateFlags.swift in Sources */,
+				F1E206DFFFC7704EBD0E163056EF1837 /* EventFlags.swift in Sources */,
+				9CFDB7590FCCC8216E798524031111AC /* FSEvent.swift in Sources */,
+				673571F9CD98DA3DEB7979AA7A0DAB98 /* Waaatcher-dummy.m in Sources */,
+				E4AFA6CE6602AFC6DCD091EC2A6B4A99 /* Waaatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +336,7 @@
 		};
 		6EA4BE03AE07F49E7C27F58890D767C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 333BD3ECD35A77E36DDC3CA68575D929 /* Waaatcher.xcconfig */;
+			baseConfigurationReference = CE5E0B6DDCC8ACBA4E60A6D51067D535 /* Waaatcher.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -507,7 +511,7 @@
 		};
 		C608DE67E6AEFE6B0EB29CF416B85D9F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 333BD3ECD35A77E36DDC3CA68575D929 /* Waaatcher.xcconfig */;
+			baseConfigurationReference = CE5E0B6DDCC8ACBA4E60A6D51067D535 /* Waaatcher.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;

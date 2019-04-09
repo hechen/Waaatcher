@@ -11,7 +11,7 @@ import CoreServices
 
 public struct FSEvent {
     let path: String
-    let flags: FSEventFlags
+    let flags: EventFlags
     let ID: FSEventStreamEventId
 }
 
