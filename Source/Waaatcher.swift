@@ -72,7 +72,7 @@ public class Waaatcher {
     ///   - latency: Event delay after occur
     ///   - sinceWhen: Events callback after which event. Default is sineNow.
     ///   - eventCreateFlags: FSEventStream create flags. Details at EventCreatFlags.swift
-    ///   - scheduledRunloop: FSEvent will be scheduled on which runloop
+    ///   - scheduledRunloop: Which runloop FSEventStream will be scheduled on
     public init(paths: [ValidWatchPath],
                 latency: Double = 3.0,
                 sinceWhen: FSEventStreamEventId = FSEventStreamEventId(kFSEventStreamEventIdSinceNow),
@@ -90,7 +90,7 @@ public class Waaatcher {
     /// Start working.
     ///
     /// - Returns: start successfully or not
-    /// - Throws: When waaatcher's paths check fails, throw invalid error
+    /// - Throws: When waaatcher's paths check fails, invalid error will be thrown
     public func start() throws -> Bool {
         
         /* Step 1   Create FSEventStream */
@@ -103,8 +103,6 @@ public class Waaatcher {
                                            release: nil,
                                            copyDescription: nil)
         
-        
-        /* 1.2 Prepare callback function */
         var validFilePaths = [String]()
         for path in pathsToWatch {
             do {
@@ -115,6 +113,36 @@ public class Waaatcher {
             }
         }
         
+        /* 1.2 Prepare callback function */
+        /*
+         The application services events as they arrive.
+         The API posts events by calling the callback function specified in step 1.
+         */
+        let streamCallback: FSEventStreamCallback = { ( _ streamRef: ConstFSEventStreamRef, _ clientCallBackInfo: UnsafeMutableRawPointer?, _ numEvents: Int, _ eventPaths: UnsafeMutableRawPointer, _ eventFlags: UnsafePointer<FSEventStreamEventFlags>, _ eventIds: UnsafePointer<FSEventStreamEventId>) -> Void in
+            
+            guard numEvents > 0 else { return }
+            
+            guard let info = clientCallBackInfo else {
+                return
+            }
+            
+            let unmanagedPtr: Unmanaged<Waaatcher> = Unmanaged.fromOpaque(info)
+            let watcher = unmanagedPtr.takeUnretainedValue()
+            guard let eventPaths = unsafeBitCast(eventPaths, to: NSArray.self) as? [String] else {
+                return
+            }
+            
+            // Each event contain path, flag and Id
+            var events = [FSEvent]()
+            for i in 0..<numEvents {
+                let path = eventPaths[i]
+                let flags = EventFlags(eventFlags: eventFlags[i])
+                let id = eventIds[i]
+                events.append(FSEvent(path: path, flags: flags, ID: id))
+            }
+            watcher.watcherEventCallback?(events)
+            
+        }
         guard let stream = FSEventStreamCreate(nil, streamCallback, &context,
                                                pathsToWatch as CFArray,
                                                sinceWhen,
@@ -153,38 +181,4 @@ public class Waaatcher {
         
         isWatching = false
     }
-}
-
-/*
- @convention(c) (OpaquePointer, Optional<UnsafeMutableRawPointer>, Int, UnsafeMutableRawPointer, UnsafePointer<UInt32>, UnsafePointer<UInt64>) -> ()
- 
- The application services events as they arrive.
- The API posts events by calling the callback function specified in step 1.
- */
-fileprivate func streamCallback(streamRef: OpaquePointer,
-                                clientCallBackInfo: UnsafeMutableRawPointer?,
-                                numEvents: Int,
-                                eventPaths: UnsafeMutableRawPointer,
-                                eventFlags: UnsafePointer<FSEventStreamEventFlags>,
-                                eventIds: UnsafePointer<FSEventStreamEventId>) {
-    
-    guard numEvents > 0 else { return }
-    
-    guard let info = clientCallBackInfo else {
-        return
-    }
-    let watcher = unsafeBitCast(info, to: Waaatcher.self)
-    guard let eventPaths = unsafeBitCast(eventPaths, to: NSArray.self) as? [String] else {
-        return
-    }
-    
-    // Each event contain path, flag and Id
-    var events = [FSEvent]()
-    for i in 0..<numEvents {
-        let path = eventPaths[i]
-        let flags = EventFlags(eventFlags: eventFlags[i])
-        let id = eventIds[i]
-        events.append(FSEvent(path: path, flags: flags, ID: id))
-    }
-    watcher.watcherEventCallback?(events)
 }
