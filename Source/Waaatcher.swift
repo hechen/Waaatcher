@@ -151,6 +151,8 @@ public class Waaatcher {
                                                 return false
         }
         
+        self.stream = stream
+        
         
         /* Step 2  Schedules the stream on the run loop */
         FSEventStreamScheduleWithRunLoop(stream, scheduledRunloop.getCFRunLoop(), CFRunLoopMode.defaultMode.rawValue)
