@@ -52,8 +52,7 @@ class ViewController: NSViewController {
     private func reObserve() {
         let path = self.pathTextField.stringValue
         
-        watcher = Waaatcher(paths: [path], latency: 1)
-        watcher?.watcherEventCallback = { [weak self] in
+        watcher = Waaatcher(paths: [path], latency: 1) { [weak self] in
             self?.output("Callback called!!")
             for event in $0 {
                 self?.output("Event: \(event)")

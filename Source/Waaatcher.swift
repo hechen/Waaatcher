@@ -58,7 +58,7 @@ public class Waaatcher {
     
     private(set) var isWatching: Bool = false
     
-    public var watcherEventCallback: WaaatcherEventCallback?
+    let watcherEventCallback: WaaatcherEventCallback?
     
     deinit {
         stop()
@@ -77,13 +77,15 @@ public class Waaatcher {
                 latency: Double = 3.0,
                 sinceWhen: FSEventStreamEventId = FSEventStreamEventId(kFSEventStreamEventIdSinceNow),
                 eventCreateFlags: EventCreatFlags = [EventCreatFlags.useCFTypes, EventCreatFlags.fileEvents],
-                scheduledRunloop: RunLoop = RunLoop.main) {
+                scheduledRunloop: RunLoop = RunLoop.main,
+                eventsCallback: WaaatcherEventCallback?) {
         
         self.pathsToWatch = paths
         self.latency = latency
         self.sinceWhen = sinceWhen
         self.eventCreateFlags = eventCreateFlags
         self.scheduledRunloop = scheduledRunloop
+        self.watcherEventCallback = eventsCallback
     }
     
     
