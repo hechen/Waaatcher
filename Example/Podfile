@@ -1,6 +1,6 @@
 platform :osx, '10.13'
-inhibit_all_warnings!
 
 target 'WaaatcherDemo' do
+  use_frameworks!
   pod 'Waaatcher', path: '../', subspecs: ['Core', 'Rx']
 end

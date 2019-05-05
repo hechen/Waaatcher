@@ -1,4 +1,4 @@
-module Waaatcher {
+framework module Waaatcher {
   umbrella header "Waaatcher-umbrella.h"
 
   export *

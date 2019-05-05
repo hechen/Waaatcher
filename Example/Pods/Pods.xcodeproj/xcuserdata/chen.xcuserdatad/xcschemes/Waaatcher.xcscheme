@@ -14,8 +14,8 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B6B6D18CF7FD1AB3E4B2C7AB27C5669"
-               BuildableName = "libWaaatcher.a"
+               BlueprintIdentifier = "C874263879157271639E0D178E1E3602"
+               BuildableName = "Waaatcher.framework"
                BlueprintName = "Waaatcher"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
