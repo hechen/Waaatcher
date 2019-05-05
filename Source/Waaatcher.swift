@@ -46,19 +46,19 @@ public class Waaatcher {
      Define variables and create a CFArray object containing
      CFString objects containing paths to watch.
      */
-    private var pathsToWatch: [ValidWatchPath]
+    public private(set) var pathsToWatch: [ValidWatchPath]
     
-    private let latency: CFTimeInterval
+    public private(set) var latency: CFTimeInterval
     
-    private let sinceWhen: FSEventStreamEventId
+    public private(set) var sinceWhen: FSEventStreamEventId
     
-    private let eventCreateFlags: WaaaEventCreatFlags
+    public private(set) var eventCreateFlags: WaaaEventCreatFlags
     
-    private let scheduledRunloop: RunLoop
+    public private(set) var scheduledRunloop: RunLoop
     
-    private(set) var isWatching: Bool = false
+    public private(set) var isWatching: Bool = false
     
-    let watcherEventCallback: WaaatcherEventCallback?
+    var watcherEventCallback: WaaatcherEventCallback?
     
     deinit {
         stop()
@@ -78,7 +78,7 @@ public class Waaatcher {
                 sinceWhen: FSEventStreamEventId = FSEventStreamEventId(kFSEventStreamEventIdSinceNow),
                 eventCreateFlags: WaaaEventCreatFlags = [WaaaEventCreatFlags.useCFTypes, WaaaEventCreatFlags.fileEvents],
                 scheduledRunloop: RunLoop = RunLoop.main,
-                eventsCallback: WaaatcherEventCallback?) {
+                eventsCallback: WaaatcherEventCallback? = nil) {
         
         self.pathsToWatch = paths
         self.latency = latency
@@ -168,6 +168,8 @@ public class Waaatcher {
     }
     
     public func stop() {
+        guard isWatching else { return }
+        
         guard let stream = stream else { return }
         
         /* The application tells the daemon to stop sending events by calling FSEventStreamStop. */

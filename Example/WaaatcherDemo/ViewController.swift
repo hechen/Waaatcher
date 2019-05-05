@@ -8,6 +8,7 @@
 
 import Cocoa
 import Waaatcher
+import RxSwift
 
 class ViewController: NSViewController {
     
@@ -47,26 +48,30 @@ class ViewController: NSViewController {
         }
     }
     
-    
-    
     private func reObserve() {
         let path = self.pathTextField.stringValue
         
-        watcher = Waaatcher(paths: [path], latency: 1) { [weak self] in
-            self?.output("Callback called!!")
-            for event in $0 {
-                self?.output("Event: \(event)")
-            }
-        }
+//        watcher = Waaatcher(paths: [path], latency: 1) { [weak self] in
+//            self?.output("Callback called!!")
+//            for event in $0 {
+//                self?.output("Event: \(event)")
+//            }
+//        }
+//
+//        do {
+//            if let ret = try watcher?.start(), ret {
+//                output("Create Wathcer Successfully.")
+//            }} catch {
+//                output("start watcher throw error: \(error)")
+//        }
         
-        do {
-            if let ret = try watcher?.start(), ret {
-                output("Create Wathcer Successfully.")
-            }} catch {
-                output("start watcher throw error: \(error)")
-        }
+        watcher = Waaatcher(paths: [path])
+        watcher?.rx.FSEventObservable.subscribeOn(MainScheduler.instance).subscribe(onNext: { [weak self] in
+            self?.output("Event: \($0)")
+        }).disposed(by: bag)
     }
     
+    fileprivate let bag = DisposeBag()
     
     private func output(_ output: String) {
         print(output)

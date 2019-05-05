@@ -131,7 +131,7 @@ extension WaaaEventCreatFlags: CustomStringConvertible {
         if self.contains(.ignoreSelf) { flags.append("ignoreSelf") }
         if self.contains(.fileEvents) { flags.append("fileEvents") }
         if self.contains(.markSelf) { flags.append("markSelf") }
-//        if self.contains(.useExtendedData) { flags.append("useExtendedData") }
+        if self.contains(.useExtendedData) { flags.append("useExtendedData") }
         
         return flags.joined(separator: ", ")
     }

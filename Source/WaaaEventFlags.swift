@@ -251,9 +251,7 @@ extension WaaaEventFlags: CustomStringConvertible {
 
         if self.contains(.itemIsHardlink) { flags.append("itemIsHardlink") }
         if self.contains(.itemIsLastHardlink) { flags.append("itemIsLastHardlink") }
-/* Comment for compality.
         if self.contains(.itemCloned) { flags.append("itemCloned") }
- */
         
         return flags.joined(separator: ", ")
     }
