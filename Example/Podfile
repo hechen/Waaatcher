@@ -1,6 +1,6 @@
-platform :osx, '10.10'
+platform :osx, '10.13'
 inhibit_all_warnings!
 
 target 'WaaatcherDemo' do
-    pod 'Waaatcher', path: '../'
+  pod 'Waaatcher', path: '../', subspecs: ['Core', 'Rx']
 end

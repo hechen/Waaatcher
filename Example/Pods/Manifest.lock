@@ -1,16 +1,26 @@
 PODS:
-  - Waaatcher (0.0.5)
+  - RxSwift (4.5.0)
+  - Waaatcher/Core (0.1)
+  - Waaatcher/Rx (0.1):
+    - RxSwift (~> 4.5)
+    - Waaatcher/Core
 
 DEPENDENCIES:
-  - Waaatcher (from `../`)
+  - Waaatcher/Core (from `../`)
+  - Waaatcher/Rx (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxSwift
 
 EXTERNAL SOURCES:
   Waaatcher:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Waaatcher: 9ab9416944a2b13a17c1986b51ffe418abf71a24
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  Waaatcher: dd3df9e2e647203a137daeb1a672156f4e1a1adb
 
-PODFILE CHECKSUM: 896dcb18cd9865fabf040175cbfc88089f379bef
+PODFILE CHECKSUM: 458f24a38c4d3953eee05c2f29e2cc8e72607556
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.6.1
