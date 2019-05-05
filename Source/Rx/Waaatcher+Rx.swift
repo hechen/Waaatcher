@@ -14,9 +14,8 @@ import RxSwift
 extension Waaatcher: ReactiveCompatible { }
 
 public
-extension Reactive where Base: Waaatcher {
-    
-    public var FSEventObservable: Observable<WaaaFSEvent> {
+extension Reactive where Base: Waaatcher {    
+    var FSEventObservable: Observable<WaaaFSEvent> {
         
         return Observable.create { [weak waaatcher = self.base] observer in
             
