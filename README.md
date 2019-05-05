@@ -50,6 +50,21 @@ struct WaaaFSEvent {
 Also, `WaaaFSEventFlags` is defined as the wrapper of unreadable `FSEventStreamEventFlags`.
 
 
+#### Reactive Extension
+
+v1.0 extend Waaatcher with Reactive extension. Dead-simple API as below,
+Not like the Waaatcher native callback with event array parameter, rx extension emit each single event.
+
+
+``` Swift
+fileprivate let bag = DisposeBag()
+// ...
+let watcher = Waaatcher(paths: [path])
+watcher?.rx.FSEventObservable.subscribe(onNext: { [weak self] in
+    self?.output("Event: \($0)")
+}).disposed(by: bag)
+```
+
 
 ### References
 
