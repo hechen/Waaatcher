@@ -1,12 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = 'Waaatcher'
-  s.version      = '0.1'
+  s.version      = '0.1.1'
   s.authors      = 'Chen', { 'Chen' => 'hechen.dream@gmail.com' }
   s.homepage     = 'https://github.com/hechen/Waaatcher.git'
   s.summary      = 'File Stream Event Wrapper for macOS'
   s.platform     = :osx, '10.13'
   s.source       = { :git => 'https://github.com/hechen/Waaatcher.git', :tag => s.version.to_s }
-  s.source_files = 'Source/**/**'
   s.swift_version = '5.0'
   s.license      = {
     :type => 'MIT',
