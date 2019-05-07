@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary      = 'File Stream Event Wrapper for macOS'
   s.platform     = :osx, '10.13'
   s.source       = { :git => 'https://github.com/hechen/Waaatcher.git', :tag => s.version.to_s }
-  s.swift_version = '5.0'
+  s.swift_version = '4.2'
   s.license      = {
     :type => 'MIT',
     :file => 'LICENSE',
