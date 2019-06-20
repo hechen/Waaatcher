@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'Waaatcher'
-  s.version      = '0.1.2'
+  s.version      = '0.1.3'
   s.authors      = 'Chen', { 'Chen' => 'hechen.dream@gmail.com' }
   s.homepage     = 'https://github.com/hechen/Waaatcher.git'
   s.summary      = 'File Stream Event Wrapper for macOS'
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     sp.source_files = 'Source/Rx/**/**'
     
     sp.dependency 'Waaatcher/Core'
-    sp.dependency 'RxSwift', '~> 4.5'
+    sp.dependency 'RxSwift', '~> 5.0'
   end
   
 end

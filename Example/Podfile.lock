@@ -1,8 +1,8 @@
 PODS:
-  - RxSwift (4.5.0)
-  - Waaatcher/Core (0.1)
-  - Waaatcher/Rx (0.1):
-    - RxSwift (~> 4.5)
+  - RxSwift (5.0.0)
+  - Waaatcher/Core (0.1.2)
+  - Waaatcher/Rx (0.1.2):
+    - RxSwift (~> 5.0)
     - Waaatcher/Core
 
 DEPENDENCIES:
@@ -18,8 +18,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
-  Waaatcher: dd3df9e2e647203a137daeb1a672156f4e1a1adb
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  Waaatcher: 5d125b974997f9b1c84b92508cd7d63eaf888311
 
 PODFILE CHECKSUM: 9fe1045df5d8088f1429971cfdbc2d55e05aa291
 

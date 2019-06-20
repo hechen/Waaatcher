@@ -1,6 +1,6 @@
 {
   "name": "Waaatcher",
-  "version": "0.1",
+  "version": "0.1.2",
   "authors": [
     "Chen",
     {
@@ -14,9 +14,8 @@
   },
   "source": {
     "git": "https://github.com/hechen/Waaatcher.git",
-    "tag": "0.1"
+    "tag": "0.1.2"
   },
-  "source_files": "Source/**/**",
   "swift_version": "5.0",
   "license": {
     "type": "MIT",
@@ -37,7 +36,7 @@
 
         ],
         "RxSwift": [
-          "~> 4.5"
+          "~> 5.0"
         ]
       }
     }
