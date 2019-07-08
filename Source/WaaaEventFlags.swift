@@ -10,7 +10,7 @@ import Foundation
 import CoreServices
 
 /*
- *  FSEventStreamEventFlags
+ *  alias of FSEventStreamEventFlags
  */
 public struct WaaaEventFlags: OptionSet {
     public var rawValue: Int

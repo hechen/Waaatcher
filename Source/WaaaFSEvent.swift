@@ -9,10 +9,13 @@
 import Foundation
 import CoreServices
 
+/*
+    Wrapper for FSEvent
+ */
 public struct WaaaFSEvent {
-    let path: String
-    let flags: WaaaEventFlags
-    let ID: FSEventStreamEventId
+    public let path: String
+    public let flags: WaaaEventFlags
+    public let ID: FSEventStreamEventId
 }
 
 extension WaaaFSEvent: CustomStringConvertible {
