@@ -67,7 +67,10 @@ class ViewController: NSViewController {
         
         watcher = Waaatcher(paths: [path])
         watcher?.rx.FSEventObservable.subscribeOn(MainScheduler.instance).subscribe(onNext: { [weak self] in
+            
             self?.output("Event: \($0)")
+        
+            
         }).disposed(by: bag)
     }
     
