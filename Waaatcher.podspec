@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'Waaatcher'
-  s.version      = '0.1.3'
+  s.version      = '0.1.4'
   s.authors      = 'Chen', { 'Chen' => 'hechen.dream@gmail.com' }
   s.homepage     = 'https://github.com/hechen/Waaatcher.git'
   s.summary      = 'File Stream Event Wrapper for macOS'
